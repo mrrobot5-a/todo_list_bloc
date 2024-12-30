@@ -5,7 +5,7 @@ class TodoEvent extends Equatable {
   const TodoEvent();
 
   @override
-  List<Object> get props => [];
+  List<Object?> get props => [];
 }
 
 //Todo Event add
@@ -18,7 +18,7 @@ class AddTodo extends TodoEvent {
   const AddTodo(this.todo);
 
   @override
-  List<Object> get props {
+  List<Object?> get props {
     return [todo];
   }
 }
@@ -30,7 +30,7 @@ class DeleteTodo extends TodoEvent {
   const DeleteTodo(this.id);
 
   @override
-  List<Object> get props {
+  List<Object?> get props {
     return [id];
   }
 }
@@ -42,7 +42,7 @@ class ToggleTodoStatus extends TodoEvent {
   const ToggleTodoStatus(this.id);
 
   @override
-  List<Object> get props {
+  List<Object?> get props {
     return [id];
   }
 }
